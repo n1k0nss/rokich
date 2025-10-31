@@ -16,6 +16,11 @@ const CREDENTIALS_PATH = process.env.GOOGLE_CREDENTIALS_PATH || './google-creden
 const BACKUP_FILE = path.resolve('results_backup.json');
 
 const app = express();
+app.use('/rokich-test', express.static(path.join(__dirname, '../client/dist')));
+
+app.get('/rokich-test/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+});
 app.use(
     helmet({
         contentSecurityPolicy: false // тимчасово вимикаємо CSP
