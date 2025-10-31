@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+    base: '/rokich-test/',
     plugins: [react(), tailwindcss()],
     server: {
         proxy: {
