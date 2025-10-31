@@ -153,7 +153,7 @@ function validateBody(body) {
 
 
 // POST /api/results
-app.post('/api/results', async (req, res) => {
+app.post('/rokich-test/api/results', async (req, res) => {
     try {
         const body = req.body;
         const errs = validateBody(body);
