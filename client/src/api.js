@@ -1,8 +1,11 @@
-import axios from "axios";
+const BASE_URL = window.location.origin + '/rokich-test'; // або конкретний IP + роут
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
-
-export const submitResults = async (data) => {
-    const response = await axios.post(`${API_URL}/api/results`, data);
-    return response.data;
-};
+export async function submitResults(data) {
+    const res = await fetch(`${BASE_URL}/api/results`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    });
+    if (!res.ok) throw new Error('Network error');
+    return res.json();
+}
