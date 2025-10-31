@@ -16,7 +16,11 @@ const CREDENTIALS_PATH = process.env.GOOGLE_CREDENTIALS_PATH || './google-creden
 const BACKUP_FILE = path.resolve('results_backup.json');
 
 const app = express();
-app.use(helmet());
+app.use(
+    helmet({
+        contentSecurityPolicy: false // тимчасово вимикаємо CSP
+    })
+);
 app.use(bodyParser.json({ limit: '300kb' }));
 
 
