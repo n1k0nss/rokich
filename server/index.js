@@ -16,7 +16,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
-const CREDENTIALS_PATH = process.env.GOOGLE_CREDENTIALS_PATH || './google-credentials.json';
+const CREDENTIALS_PATH = process.env.GOOGLE_CREDENTIALS_PATH;
 const BACKUP_FILE = path.resolve('results_backup.json');
 
 const app = express();
