@@ -1,1 +1,19 @@
-./server/google-credentials.json
+# Google credentials (секретні ключі)
+server/google-credentials.json
+
+# Загальні секрети і конфігурації
+.env
+*.env
+*.pem
+*.key
+
+# Node і build
+node_modules/
+dist/
+client/dist/
+results_backup.json
+
+# IDE і системні файли
+.vscode/
+.idea/
+.DS_Store
