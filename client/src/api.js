@@ -1,7 +1,5 @@
-const BASE_URL = window.location.origin + '/rokich-test'; // або конкретний IP + роут
-
 export async function submitResults(data) {
-    const res = await fetch(`${BASE_URL}/api/results`, {
+    const res = await fetch(`/api/results`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
