@@ -1,4 +1,4 @@
-export const terminalValues = [
+export const TERMINAL_VALUES = [
     "Активне діяльне життя",
     "Життєва мудрість",
     "Здоров’я",
@@ -19,7 +19,7 @@ export const terminalValues = [
     "Розваги (приємне проведення часу)"
 ];
 
-export const instrumentalValues = [
+export const INSTRUMENTAL_VALUES = [
     "Акуратність",
     "Вихованість",
     "Відповідальність",
@@ -39,3 +39,12 @@ export const instrumentalValues = [
     "Широта поглядів",
     "Чуйність"
 ];
+
+export const SCHWARTZ_QUESTIONS = [
+    'Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10',
+    'Q11', 'Q12', 'Q13', 'Q14', 'Q15', 'Q16', 'Q17', 'Q18', 'Q19', 'Q20',
+    'Q21', 'Q22', 'Q23', 'Q24', 'Q25', 'Q26', 'Q27', 'Q28', 'Q29', 'Q30',
+    'Q31', 'Q32', 'Q33', 'Q34', 'Q35', 'Q36', 'Q37', 'Q38', 'Q39', 'Q40'
+];
+
+export const SCHWARTZ_ALLOWED_SCORES = [1, 2, 3, 4, 5, 6];
